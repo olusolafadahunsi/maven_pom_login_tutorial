@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Maven pom Login Tutorial" verbose="1">
+    <listeners>
+        <listener class-name="org.testng.reporters.TestHTMLReporter"/>
+    </listeners>
+    <test name="LoginTests">
+        <classes>
+            <class name= "login.LoginTests"/>
+        </classes>
+    </test>
+    <parameter name="output-directory" value="test-output"/>
+</suite>
