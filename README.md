@@ -43,6 +43,7 @@ the user credentials class.
 src/test/resources: Contains the testng.xml configuration file for TestNG,screenshots folder and 
 the credentials.properties file, where the browser value is specified.
 pom.xml: Contains the project dependencies for Maven.
+
 README.md: Contains the documentation and instructions for the project.
 Configuration
 The testng.xml file contains the TestNG suite configuration for the project, including the test class to be run,
