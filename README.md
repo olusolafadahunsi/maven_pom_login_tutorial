@@ -10,14 +10,21 @@ Prerequisites
 Before you can run this project, you will need to have the following installed:
 
 Java Development Kit (JDK) version 8 or later
+
 Integrated Development Environment (IDE) such as IntelliJ IDEA.
+
 Maven
+
 Git
+
+
 
 
 Getting Started
 
 To get started with this project, follow these steps:
+
+Fork the repository to your github profile.
 
 Clone the repository to your local machine using Git: git clone https://github.com/your-username/your-repo-name.git
 
@@ -45,6 +52,7 @@ the credentials.properties file, where the browser value is specified.
 pom.xml: Contains the project dependencies for Maven.
 
 README.md: Contains the documentation and instructions for the project.
+
 Configuration
 The testng.xml file contains the TestNG suite configuration for the project, including the test class to be run,
 the output directory for the test reports, and the TestNG listeners.
