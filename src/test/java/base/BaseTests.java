@@ -1,6 +1,5 @@
 package base;
 import com.google.common.io.Files;
-import credentials.UserCredentials;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -17,9 +16,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-public class BaseTests extends UserCredentials {
+public class BaseTests {
     private WebDriver driver;
     private String browser;
+    public  String url;
+    public String validUsername;
+    public String validPassword;
+    public String invalidUsername;
+    public String invalidPassword;
     protected LoginPage loginPage;
    @BeforeClass
    public void setup(){
@@ -88,7 +92,13 @@ public class BaseTests extends UserCredentials {
        try {
            file = new FileInputStream("src/test/resources/config.properties");
            props.load(file);
+           //retrieves and specifies the browser specified in the config.properties file
            browser= props.getProperty("browser");
+           url = props.getProperty("url");
+           validUsername= props.getProperty("validUsername");
+           validPassword = props.getProperty("validPassword");
+           invalidUsername = props.getProperty("invalidUsername");
+           invalidPassword= props.getProperty("invalidPassword");
        } catch (IOException e) {
            throw new RuntimeException(e);
        }
