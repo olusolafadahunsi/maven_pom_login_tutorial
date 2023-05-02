@@ -1,11 +1,11 @@
-#POM Test Automation Framework - Login Scenario
+# POM Test Automation Framework - Login Scenario
 
 This is a Java-based test automation framework designed to simulate a login scenario 
 using Selenium WebDriver, TestNG, and Maven as the build tool. Please note that you are not required to
 download any driver as the WebDriverManager library used in this project implementation handles the download,
 setup and management of the drivers.
 
-##Prerequisites
+## Prerequisites
 
 Before you can run this project, you will need to have the following installed:
 
@@ -20,7 +20,7 @@ Git
 
 
 
-##Getting Started
+## Getting Started
 
 To get started with this project, follow these steps:
 
@@ -36,7 +36,7 @@ Open the LoginTests class located in the src/test/java/login directory to view t
 
 Run the test cases by right-clicking on the LoginTests class and selecting "Run As" > "TestNG Test".
 
-##Project Structure
+## Project Structure
 
 
 The project structure follows the Page Object Model (POM) design pattern, with separate packages 
