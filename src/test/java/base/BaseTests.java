@@ -67,7 +67,7 @@ public class BaseTests {
      * in the browser parameter in the config.properties file located in this path "resources/config.properties".
      */
     private void initiateSelectedBrowser(){
-       readBrowserType();
+       readPropertiesConfigurations();
        if (browser.equalsIgnoreCase("chrome")){
            WebDriverManager.chromedriver().setup();
            driver = new ChromeDriver();
@@ -83,10 +83,10 @@ public class BaseTests {
    }
 
     /**
-     * This method is used to retrieve the specified browser from the config.properties file.
+     * This method is used to retrieve details specified in config.properties file.git
      * Set browser value to either chrome,firefox or edge to run the test on the desired browser.
      */
-   private void readBrowserType() {
+   private void readPropertiesConfigurations() {
        Properties props = new Properties();
        FileInputStream file;
        try {
